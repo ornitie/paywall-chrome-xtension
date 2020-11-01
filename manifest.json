@@ -22,11 +22,21 @@
         "main.js"
       ],
       "run_at": "document_start"
+    },
+    {
+      "matches": [
+        "*://*.dinero.com/*"
+      ],
+      "js": [
+        "dinero.js"
+      ],
+      "run_at": "document_start"
     }
   ],
   "web_accessible_resources": [
     "domManipulation.js",
-    "functions.js"
+    "functions.js",
+    "dinero.js"
   ],
   "background": {
     "scripts": [
