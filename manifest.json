@@ -2,9 +2,15 @@
   "manifest_version": 2,
   "name": "Paywall Chrome Xtension",
   "version": "0.2.0",
+  "description": "A test for webrequest",
   "browser_action": {
     "default_popup": "popup.html"
   },
+  "permissions": [
+    "<all_urls>",
+    "webRequest",
+    "webRequestBlocking"
+  ],
   "content_scripts": [
     {
       "matches": [
@@ -19,5 +25,11 @@
   "web_accessible_resources": [
     "domManipulation.js",
     "functions.js"
-  ]
+  ],
+  "background": {
+    "scripts": [
+      "eltiempo.js"
+    ],
+    "persistent": true
+  }
 }
