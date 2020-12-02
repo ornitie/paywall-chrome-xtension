@@ -9,12 +9,14 @@
   "permissions": [
     "<all_urls>",
     "webRequest",
-    "webRequestBlocking"
+    "webRequestBlocking",
+    "storage"
   ],
   "content_scripts": [
     {
       "matches": [
-        "*://*.semana.com/*"
+        "*://*.semana.com/*",
+        "*://*.portafolio.co/*"
       ],
       "js": [
         "main.js"
